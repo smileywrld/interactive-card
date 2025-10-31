@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-container {
+    display: flex;
+}
+
+#color-side {
+    background-image: url(images/bg-main-desktop.png);
+    width: 30%;
+}
+
+#white-side {
+    width: 70%;
+}
