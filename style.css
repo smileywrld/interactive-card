@@ -39,6 +39,33 @@ body {
     border-radius: 10px;
     background-position: center;
     background-size: cover;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-front img {
+    width: 80px;
+}
+
+
+.card-front h1 {
+    color: hsl(0, 100%, 100%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(270, 3%, 87%);
+}
+
+.name-date h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .card-back {
@@ -51,7 +78,7 @@ body {
     position: relative;
     top: 20px;
     left: 50px;
-    /* box-shadow: 20px 0px 8px 5px hsl(270, 3%, 92%); */
+    box-shadow: 5px 0px 20px 5px rgba(0, 0, 0, 0.1);
 }
 
 .white-side {
