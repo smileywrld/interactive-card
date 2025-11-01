@@ -12,13 +12,16 @@ body {
 
 #main-container {
     display: flex;
+    height: 100vh;
 }
 
-#color-side {
+.color-side {
     background-image: url(images/bg-main-desktop.png);
+    background-position: center;
+    background-size: cover;
     width: 30%;
 }
 
-#white-side {
+.white-side {
     width: 70%;
 }
