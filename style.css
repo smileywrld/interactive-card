@@ -16,11 +16,42 @@ body {
     height: 100vh;
 }
 
+
 .color-side {
     background-image: url(images/bg-main-desktop.png);
     background-position: center;
     background-size: cover;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    position: relative;
+    left: 150px;
+}
+
+.card-front {
+    width: 340px;
+    height: 214px;
+    background-image: url(images/bg-card-front.png);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-back {
+    width: 340px;
+    height: 214px;
+    background-image: url(images/bg-card-back.png);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    /* box-shadow: 20px 0px 8px 5px hsl(270, 3%, 92%); */
 }
 
 .white-side {
