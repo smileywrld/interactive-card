@@ -204,17 +204,19 @@ input[type=submit] {
 
     form {
         max-width: 90%;
-        padding-top: 2%;
+        padding-top: 5%;
     }
 
     .side-by-side {
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
     }
 
-    /* 
-    .exp-date input,
+    
+    .exp-date input{
+        width: 30%;
+    }
     .cvc input {
         width: 100%;
-    } */
+    } 
 }
