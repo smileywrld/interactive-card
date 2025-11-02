@@ -164,6 +164,7 @@ input[type=submit] {
     #main-container {
         flex-direction: column;
         height: auto;
+        width: 100%;
 
     }
 
@@ -212,11 +213,12 @@ input[type=submit] {
         gap: 10px;
     }
 
-    
-    .exp-date input{
+
+    .exp-date input {
         width: 30%;
     }
+
     .cvc input {
         width: 100%;
-    } 
+    }
 }
