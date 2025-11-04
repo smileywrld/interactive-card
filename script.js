@@ -1,18 +1,20 @@
-let userName = document.querySelector(".username").innerHTML;
+const cardElements = {
+	userName: document.querySelector(".username"),
+	cardNumber: document.querySelector(".card-info"),
+	cardDate: document.querySelector(".date"),
+	cardCvc: document.querySelector(".cvc")
+};
 
-let cardNumber = document.querySelector(".card-info").innerHTML;
+const inputs = {
+	name: document.querySelector(".input-name"),
+	date: document.querySelector(".input-date"),
+	cardNumber: document.querySelector(".input-card-number"),
+	cvc: document.querySelector(".input-cvc")
+};
 
-let cardDate = document.querySelector(".date").innerHTML;
+// Update card display when inputs change
+inputs.name.addEventListener('input', () => cardElements.userName.innerHTML = inputs.name.value);
+inputs.cardNumber.addEventListener('input', () => cardElements.cardNumber.innerHTML = inputs.cardNumber.value);
+inputs.date.addEventListener('input', () => cardElements.cardDate.innerHTML = inputs.date.value);
+inputs.cvc.addEventListener('input', () => cardElements.cardCvc.innerHTML = inputs.cvc.value);
 
-let cardCvc = document.querySelector(".cvc").innerHTML;
-
-let inputName = document.querySelector(".input-name").value;
-
-let inputDate = document.querySelector(".input-date").value;
-
-let inputCardNum = document.querySelector(".input-card-number").value;
-
-let inputCvc = document.querySelector(".input-cvc").value;
-
-
-console.log(inputCvc);
