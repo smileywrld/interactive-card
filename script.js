@@ -13,3 +13,6 @@ let inputDate = document.querySelector(".input-date").value;
 let inputCardNum = document.querySelector(".input-card-number").value;
 
 let inputCvc = document.querySelector(".input-cvc").value;
+
+
+console.log(inputCvc);
