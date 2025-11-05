@@ -33,9 +33,9 @@ inputs.cvc.addEventListener(
 );
 
 console.log(inputs.cardNumber);
-
-function confirmDetails() {
-	cardElements.userName = inputs.name;
+function confirmDetails(e) {
+    e.preventDefault(); // Prevent form submission
+    // Add your form validation logic here
 }
 
 submitBtn.addEventListener("click", confirmDetails);
