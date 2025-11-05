@@ -33,8 +33,8 @@ inputs.cvc.addEventListener("input", (e) => {
 });
 
 function confirmDetails(e) {
-	e.preventDefault(); // Prevent form submission
-	// Add your form validation logic here
+	e.preventDefault();
+	cardElements.cardNumber = inputs.cardNumber;
 }
 
 submitBtn.addEventListener("click", confirmDetails);
