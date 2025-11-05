@@ -8,34 +8,33 @@ const cardElements = {
 };
 
 const inputs = {
-	name: document.querySelector(".input-name").value,
-	date: document.querySelector(".input-date").value,
-	cardNumber: document.querySelector(".input-card-number").value,
-	cvc: document.querySelector(".input-cvc").value,
+	name: document.querySelector(".input-name"),
+	date: document.querySelector(".input-date"),
+	cardNumber: document.querySelector(".input-card-number"),
+	cvc: document.querySelector(".input-cvc"),
 };
 
 // Update card display when inputs change
-inputs.name.addEventListener(
-	"input",
-	() => (cardElements.userName.innerHTML = inputs.name.value)
-);
-inputs.cardNumber.addEventListener(
-	"input",
-	() => (cardElements.cardNumber.innerHTML = inputs.cardNumber.value)
-);
-inputs.date.addEventListener(
-	"input",
-	() => (cardElements.cardDate.innerHTML = inputs.date.value)
-);
-inputs.cvc.addEventListener(
-	"input",
-	() => (cardElements.cardCvc.innerHTML = inputs.cvc.value)
-);
+inputs.name.addEventListener("input", (e) => {
+	cardElements.userName.textContent = e.target.value || "JANE APPLESEED";
+});
 
-console.log(inputs.cardNumber);
+inputs.cardNumber.addEventListener("input", (e) => {
+	cardElements.cardNumber.textContent =
+		e.target.value || "0000 0000 0000 0000";
+});
+
+inputs.date.addEventListener("input", (e) => {
+	cardElements.cardDate.textContent = e.target.value || "00/00";
+});
+
+inputs.cvc.addEventListener("input", (e) => {
+	cardElements.cardCvc.textContent = e.target.value || "000";
+});
+
 function confirmDetails(e) {
-    e.preventDefault(); // Prevent form submission
-    // Add your form validation logic here
+	e.preventDefault(); // Prevent form submission
+	// Add your form validation logic here
 }
 
 submitBtn.addEventListener("click", confirmDetails);
